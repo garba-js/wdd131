@@ -1,7 +1,26 @@
+:root {
+    --body-font: "Open Sans", sans-serif;
+    --heading-font : "Anton", sans-serif;
+
+    --primary-color :rgba(33, 33, 82, 0.718);
+    --primary-color2 : white;
+    --box-shadow : 0 0 30px gray;
+}
+
+
+body {
+    font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    letter-spacing: 2px;
+    font-weight: 100;
+}
 
 header {
-    background-color: rgba(46, 46, 122, 0.718);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--primary-color2);
 }
 
 header h1 {
@@ -10,7 +29,7 @@ header h1 {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.722);
+    background-color: rgba(17, 26, 45, 0.465);
     padding: 5px;
     max-width: 180vw;
     text-align: center;
@@ -28,9 +47,15 @@ nav {
     flex: 1 1 auto;
 }
 
-.navigation a {
+nav a {
     text-decoration: none;
-    color: white
+    color: var(--primary-color2);
+}
+
+.navigation a:hover {
+    background-color: rgb(128, 169, 48);
+    color: var(--primary-color2);
+    padding: 2px;
 }
  
 /* main section */
@@ -52,18 +77,21 @@ main {
     height: var(--height-auto);
     float: right;
     padding: 2px;
-    margin: 1rem 10px 10px 10px;
-    box-shadow: 0 0 30px gray;
-    border: 1px solid steelblue;
+    margin: 2rem 15px 10px 10px;
+    box-shadow: var(--box-shadow);
 }
 
 .me {
-    background-color: rgba(78, 17, 17, 0.593);
+    background-color: var(--primary-color);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     padding: 1rem;
     margin-top: 0;
-    color: white;
+    color: var(--primary-color2);
+}
+
+.me ul {
+    align-items: center;
 }
 
 h2 {
@@ -78,9 +106,8 @@ p {
     width: 160px;
     height: var(--height-auto);
     float: left;
-    margin: 0 10px 10px ;
-    box-shadow: 0 0 30px gray;
-    border: 1px solid steelblue;
+    margin: 19px 10px 10px 19px;
+    box-shadow: var(--box-shadow);
 }
 
 .country h2 {
@@ -100,13 +127,15 @@ p {
     float: none;
     text-align: center;
     font-style: italic;
+    margin: 0;
 }
 
 footer {
-    background-color: gray;
+    background-color: var(--primary-color);
     padding: 1rem;
     grid-column: 1 / 4;
     text-align: center;
+    color: var(--primary-color2);
 }
 
 footer p {
