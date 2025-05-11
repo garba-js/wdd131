@@ -117,6 +117,7 @@ p {
 .flag {
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
 }
 
 .caption {
@@ -125,7 +126,6 @@ p {
 
 .caption p {
     float: none;
-    text-align: center;
     font-style: italic;
     margin: 0;
 }
