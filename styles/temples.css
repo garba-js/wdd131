@@ -40,9 +40,6 @@ h1 {
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
 	color: #000;
-    position: absolute;
-    top: 2.2rem;
-    left: 9rem;
 }
 
 #menu::before {
