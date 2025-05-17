@@ -1,0 +1,133 @@
+:root {
+    --body-font: "Open Sans", sans-serif;
+    --heading-font : "Anton", sans-serif;
+
+    --primary-color :rgba(33, 33, 82, 0.718);
+    --primary-color2 : white;
+    --box-shadow : 0 0 30px gray;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+	background-color: white;
+	display: grid;
+    grid-template-columns: 1fr 2fr;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 20px #333333a8;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	color: #000;
+    position: absolute;
+    top: 2.2rem;
+    left: 9rem;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.harmbuger {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.harmbuger li {
+	display: none;
+}
+.harmbuger a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: rgb(43, 35, 35);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.harmbuger a:hover,
+.harmbuger a:active {
+	color: white;
+	background-color: rgb(62, 53, 150);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+}
+
+figure {
+    justify-content: center;
+}
+
+figure img {
+    align-self: center;
+}
+
+figcaption {
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+
+}
+
+main h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 7px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    grid-column: 1 / 4;
+    text-align: center;
+    color: var(--primary-color2);
+}
+
+footer p {
+    padding: 0;
+}
