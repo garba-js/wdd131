@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    color: black;
+}
+
+h1 {
+    background-color: green;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+table {
+    margin: 5px auto;
+    align-self: center;
+}
+
+.label {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+  }
