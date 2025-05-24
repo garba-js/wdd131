@@ -15,17 +15,79 @@ h1 {
     color: white;
 }
 
-table {
-    margin: 5px auto;
-    align-self: center;
+h3 {
+    background-color: white;
+    color: green;
+    text-align: center;
 }
 
-.label {
+.container {
+    margin: 1rem auto;
+    align-self: center;
+    max-width: 400px;
+
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+
+.input {
     text-align: right;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
 .hero img {
 	width: 100%;
 	height: auto;
-  }
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    grid-column: 1 / 4;
+    text-align: center;
+    color: var(--primary-color2);
+}
+
+footer p {
+    padding: 0;
+}
+
+
+/* @media query*/
+
+@media screen and (min-width: 40em) {
+	main {
+		display: block;
+        position: relative;
+        display: flex;
+	}
+
+    .one {
+        position: absolute;
+        top: 1.5rem;
+        left: 1rem;
+        background-color: aliceblue;
+    }
+
+    h3 {
+        background-color: green;
+        color: white;
+        text-align: left;
+        padding: 15px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .two {
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1rem;
+        background-color: white;
+    }
+	
+}
+
