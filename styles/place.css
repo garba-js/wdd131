@@ -15,17 +15,24 @@ h1 {
     color: white;
 }
 
-h3 {
-    background-color: white;
+h2 {
+    background-color: none;
     color: green;
     text-align: center;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 80px;
+    margin: 0 auto;
 }
 
 .container {
     margin: 1rem auto;
     align-self: center;
     max-width: 400px;
-
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 .item {
@@ -56,7 +63,6 @@ footer p {
     padding: 0;
 }
 
-
 /* @media query*/
 
 @media screen and (min-width: 40em) {
@@ -66,16 +72,19 @@ footer p {
         display: flex;
 	}
 
+    .container {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.526);
+    }
+
     .one {
         position: absolute;
         top: 1.5rem;
         left: 1rem;
-        background-color: aliceblue;
+        background-color: white;
     }
 
-    h3 {
-        background-color: green;
-        color: white;
+    h2 {
+        color: green;
         text-align: left;
         padding: 15px;
         margin-bottom: 10px;
