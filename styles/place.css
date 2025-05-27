@@ -63,7 +63,7 @@ footer {
     margin: 1rem 0;
     grid-column: 1 / 4;
     text-align: center;
-    color: var(--primary-color2);
+    color: black;
 }
 
 footer p {
