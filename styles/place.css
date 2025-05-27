@@ -1,7 +1,7 @@
 :root {
     --primary-color: white; 
     --primary-color2: green;
-    --body-font: "Open Sans", sans-serif;
+    --body-font: "Roboto", sans-serif;
 }
 
 * {
@@ -23,13 +23,13 @@ h1 {
 }
 
 h2 {
-    background-color: none;
     color: var(--primary-color2);
     text-align: center;
     margin-bottom: 5px;
 }
 
 .icon {
+    display: block;
     width: 80px;
     margin: 0 auto;
 }
@@ -74,13 +74,13 @@ footer p {
 
 @media screen and (min-width: 40em) {
 	main {
-		display: block;
         position: relative;
         display: flex;
 	}
 
     .container {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.526);
+        
     }
 
     .one {
@@ -96,6 +96,17 @@ footer p {
         padding: 15px;
         margin-bottom: 10px;
         margin-left: 0;
+    }
+
+    h2.weather::after {
+        content: "⛅";
+        margin-left: 8px;
+        font-size: 1.2rem;
+        color: var(--primary-color2);
+    }
+
+    .icon {
+        display: none;
     }
 
     .two {
