@@ -84,18 +84,15 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
-    align-items: center;
 }
 
 .temple-card {
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     width: 250px;
-    background-color: #fff;
+    background-color: #e7e3e3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 1rem;
 }
 
 main {
@@ -108,12 +105,14 @@ main {
 main h2 {
     text-align: center;
     margin: 1rem;
+    padding: 1rem;
 }
 
 img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    margin-bottom: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.526);
 }
 
 footer {
