@@ -1,0 +1,18 @@
+@media screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.harmbuger {
+		display: flex;
+	}
+	.harmbuger li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.harmbuger a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
