@@ -22,11 +22,17 @@ header {
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 20px #333333a8;
+    font-family: var(--heading-font);
+    
 }
 
 header,
 main {
 	margin: 0 auto;
+}
+
+body {
+    font-family: var(--body-font);
 }
 
 h1 {
