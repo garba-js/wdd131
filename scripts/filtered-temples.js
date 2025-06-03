@@ -88,21 +88,51 @@ const temples = [
 	
   ];
 
+  function renderTemples(templesArray) {
   const container = document.getElementById('templeContainer');
+  container.innerHTML = '';
 
-  temples.forEach(temple => {
-	const card = document.createElement("div");
-	card.classList.add("temple-card");
+  templesArray.forEach(temple => {
+    const card = document.createElement('div');
+    card.classList.add('temple-card');
 
-	card.innerHTML = `
-    <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-    <h3>${temple.templeName}</h3>
-    <p>Location: ${temple.location}</p>
-    <p>Dedicated: ${temple.dedicated}</p>
-    <p>Total Area: ${temple.area.toLocaleString()} sq ft</p>
-  `;
+    card.innerHTML = `
+      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+      <h3>${temple.templeName}</h3>
+      <p>Location: ${temple.location}</p>
+      <p>Dedicated: ${temple.dedicated}</p>
+      <p>Total Area: ${temple.area.toLocaleString()} sq ft</p>
+    `;
 
-  container.appendChild(card);
+    container.appendChild(card);
   });
+}
 
+const oldTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
+const newTemples = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
+const largeTemples = temples.filter(t => t.area > 90000);
+const smallTemples = temples.filter(t => t.area < 10000);
 
+document.querySelector("nav").addEventListener("click", (e) => {
+  if (!e.target.matches("a")) return; 
+  e.preventDefault(); 
+
+  switch (e.target.id) {
+    case "old":
+      renderTemples(oldTemples);
+      break;
+    case "new":
+      renderTemples(newTemples);
+      break;
+    case "large":
+      renderTemples(largeTemples);
+      break;
+    case "small":
+      renderTemples(smallTemples);
+      break;
+    case "home":
+    default:
+      renderTemples(temples);
+      break;
+  }
+});
