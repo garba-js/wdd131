@@ -28,7 +28,7 @@ h2 {
 }
 
 .callout {
-    background-color:var(--background-brown) ;
+    background-color:var(--primary-color);
     padding: 1rem;
     color: white;
 }
