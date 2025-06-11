@@ -59,6 +59,19 @@ h1 {
     font-size: 20px;
 }
 
+
+.review {
+    margin: auto;
+    text-align: center;
+    max-width: 400px;
+    background-color: #eee;
+    padding: 2rem;
+}
+
+.foot {
+    margin-top: 100%;
+}
+
 footer {
     background-color: rgba(33, 33, 82, 0.718);
     padding: 1rem;

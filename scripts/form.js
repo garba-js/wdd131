@@ -47,17 +47,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // for review
-
-// Check if the page has the reviewCount element (means we are on review.html)
 const reviewCountElem = document.getElementById("reviewCount");
 if (reviewCountElem) {
-  // Get the current count from localStorage, default to 0 if not found
+  
   let count = localStorage.getItem("reviewCount");
   if (!count) {
     count = 0;
   }
-  count = parseInt(count) + 1; // Increment the count by 1
-  localStorage.setItem("reviewCount", count); // Save it back to localStorage
-  reviewCountElem.textContent = count; // Display the updated count on the page
+  count = parseInt(count) + 1; 
+  localStorage.setItem("reviewCount", count); 
+  reviewCountElem.textContent = count; 
 }
 
