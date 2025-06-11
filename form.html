@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description"
+        content="Responsive product review form with dynamic product list, star rating, and submission counter using HTML, CSS, and JavaScript.">
     <meta name="author" content="Garba Joseph Samson">
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
@@ -16,30 +17,30 @@
         <h1>Product Review Form</h1>
         <form method="get" action="review.html" class="pform">
             <div class="align">
-            <div>Product Name </div>
-            <select id="pname" name="pname" required>
-                <option value="">Select a Product...</option>
+                <div>Product Name </div>
+                <select id="pname" name="pname" required>
+                    <option value="" disabled selected>Select a Product...</option>
                 </select>
-            <div class="rate">Overall rating</div>
-            <label><input type="radio" name="rating"  value="1star" required> &star;</label>
-            <label><input type="radio" name="rating"  value="2star" required> &star;&star;</label>
-            <label><input type="radio" name="rating"  value="3star" required> &star;&star;&star;</label>
-            <label><input type="radio" name="rating"  value="4star" required> &star;&star;&star;&star;</label>
-            <label><input type="radio" name="rating"  value="5star" required> &star;&star;&star;&star;&star;</label>
-            <div>Date of Installation</div>
-            <label><input type="date" name="date" id="date" required></label>
-            <div>Which feature did you find useful in the product? <br>(check all that apply)</div>
-            <label><input type="checkbox" name="features" value="Durability" /> Durability</label>
-          <label><input type="checkbox" name="features" value="Ease of Use" /> Ease of Use</label>
-          <label><input type="checkbox" name="features" value="Performance" /> Performance</label>
-          <label><input type="checkbox" name="features" value="Design" /> Design</label>
+                <div class="rate">Overall rating</div>
+                <label><input type="radio" name="rating" value="1" required> &star;</label>
+                <label><input type="radio" name="rating" value="2" required> &star;&star;</label>
+                <label><input type="radio" name="rating" value="3" required> &star;&star;&star;</label>
+                <label><input type="radio" name="rating" value="4" required> &star;&star;&star;&star;</label>
+                <label><input type="radio" name="rating" value="5" required> &star;&star;&star;&star;&star;</label>
+                <div>Date of Installation</div>
+                <label><input type="date" name="date" id="date" required></label>
+                <div>Which feature did you find useful in the product? <br>(check all that apply)</div>
+                <label><input type="checkbox" name="durability" value="Durability" /> Durability</label>
+                <label><input type="checkbox" name="use" value="Ease of Use" /> Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="Performance" /> Performance</label>
+                <label><input type="checkbox" name="design" value="Design" /> Design</label>
 
-            <div>Written Review (Optional)</div>
-            <label><textarea name="review" id="review" placeholder="Write your review here..."></textarea></label>
+                <div>Written Review (Optional)</div>
+                <label><textarea name="review" id="review" placeholder="Write your review here..."></textarea></label>
 
-            <div>User input</div>
-            <label><input type="text" name="uname" id="uname"></label>
-            <input type="submit" value="Send My Review">
+                <div>User input</div>
+                <label><input type="text" name="uname" id="uname"></label>
+                <input type="submit" value="Send My Review">
             </div>
         </form>
     </main>
