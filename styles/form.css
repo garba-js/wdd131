@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 16px;
+}
+
+.pform {
+    background-color: rgba(174, 174, 231, 0.375);
+    align-self: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.pform label {
+    display: block;
+}
+
+.pform div {
+    margin-top: 1rem;
+    margin-bottom: 5px;
+}
+
+.pform select[name="pname"],
+.pform input[name="date"],
+.pform input[type="textarea"],
+.pform input[name="uname"],
+.pform input[type="submit"]
+{
+    background-color: #eee;
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.pform textarea[name="review"]{
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+
+}
+
+.pform input[type="radio"],
+.pform input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+.pform input[type="submit"]{
+    margin-top: 1rem;
+    background-color: rgb(255, 166, 0);
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgba(33, 33, 82, 0.718);
+    padding: 1rem;
+    margin: 1rem 0;
+    grid-column: 1 / 4;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    padding: 0;
+}
+
