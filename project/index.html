@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doxa Patisserie</title>
+    <meta name="description"
+        content="Doxa Patisserie is a local bakery specializing in delicious cakes and cookies. Discover our story, explore our menu, and place custom orders online because your next favourite cake is here">
+    <meta name="author" content="Garba Joseph Samson">
+    <link rel="stylesheet" href="styles/doxa.css">
+    <script src="scripts/doxa.js" defer></script>
+</head>
+
+<body>
+<header>
+    <h1>Doxa Patisserie</h1>
+
+    <!-- Hamburger icon -->
+    <div id="hamburger" onclick="openNav()">&#9776;</div>
+
+    <!-- Overlay Navigation -->
+    <nav id="myNav" class="overlay">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        <ul class="hamburger-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Products</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 700px )" srcset="images/hero_large.webp">
+                <source media="(min-width: 400px )" srcset="images/hero_medium.webp">
+                <img src="images/hero_small.webp" alt="Fresh Slized cake" width="500" height="250">
+            </picture>
+        </div>
+        <div class="overlay">
+            <h2>Doxa Patisserie</h2>
+            <p>Your next favourite cake is here</p>
+            <button>Available products</button>
+        </div>
+        <div class="highlight">
+            <div class="hheading">
+            <h2>Recent Higlights</h2>
+            <p>Chech out the updates at Doxa Patisserie</p>
+            </div>
+            <div class="card one">
+                <img src="images/sample.jpg" alt="">
+                <div>
+                    <h3>What we did</h3>
+                    <p>Cookie recepe</p>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="images/sample.jpg" alt="">
+                <p>Cookie recepe</p>
+            </div>
+            <div class="card3">
+                <img src="images/sample.jpg" alt="">
+                <p>Cookie recepe</p>
+            </div>
+        </div>
+        <div class="gchat">
+            <div>
+            <img src="images/sample.jpg" alt="">
+            </div>
+            <div>
+            <form action="" class="mform">
+                <h2>Stay updated with us</h2>
+                <label for="">Full name <input type="text" name="fname" placeholder="John Doe"></label>
+                <label for="">whatsapp number <input type="number" name="wnumber" placeholder="123555000"></label>
+                <input type="submit" value="Follow Doxa">
+            </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Doxa Patisserie | Nigeria.
+        </p>
+        <p id="lastModified"></p>
+        <p> <a href="https://app.moqups.com/yo630qb2yeY2bw3P5qO48oPCWTHdHbGd/view/page/aec9f2ec3">Desktop and Mobile
+                wireframe</a>
+        </p>
+    </footer>
+</body>
+
+</html>
