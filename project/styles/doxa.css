@@ -38,7 +38,7 @@ main {
 
 #menu {
 	display: block;
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
@@ -85,8 +85,8 @@ main {
 
 .overlay {
     position: absolute;
-    top: 35%;
-    left: 20%;
+    top: 52%;
+    left: 8%;
     color: white;
     border-left: 4px solid white;
     padding-left: 10px;
@@ -104,21 +104,20 @@ main img {
 }
 
 .highlight {
-    padding: 20px 50px;
+    padding: 20px;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
 .card {
-    padding: 0 10px;
+    padding: 0 5px;
     transition: transform 0.3s ease;
     margin: 0 auto;
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
     align-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
 .card div h3 {
@@ -207,8 +206,18 @@ footer p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
-        margin-top: 4rem;
+        margin-top: 2rem;
+        background-color: var(--background-brown);
     }
+
+    .overlay {
+        position: absolute;
+        top: 32%;
+        left: 8%;
+        color: white;
+        border-left: 4px solid white;
+        padding-left: 10px;
+}
 
     .hheading h2 {
         margin-bottom: 10px;
@@ -220,10 +229,11 @@ footer p {
 
     .card {
         display: inline;
-    }
-    .card img {
+        align-content: center;
         margin: 0 auto;
+        box-shadow: ;
     }
+    
     
     .harmbuger {
 		display: flex;
