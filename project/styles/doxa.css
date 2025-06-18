@@ -33,7 +33,7 @@ header {
 }
 
 main {
-    max-width: 1000px;
+    
 }
 
 #menu {
@@ -126,7 +126,8 @@ main img {
 }
 
 .card img {
-    width: 250px;
+    width: 170px;
+    margin: 0 auto;
 }
 
   .card:hover {
@@ -222,7 +223,6 @@ footer p {
     }
     .card img {
         margin: 0 auto;
-        margin-left: 10px;
     }
     
     .harmbuger {
