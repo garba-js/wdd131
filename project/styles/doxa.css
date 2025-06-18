@@ -32,10 +32,6 @@ header {
     color: white;
 }
 
-main {
-    
-}
-
 #menu {
 	display: block;
 	font-size: 3rem;
@@ -109,6 +105,10 @@ main img {
     margin-bottom: 2rem;
 }
 
+.highlight p {
+    font-size: 13px;
+}
+
 .card {
     padding: 5px 10px;
     transition: transform 0.3s ease;
@@ -117,15 +117,26 @@ main img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
+    align-items: center;
     gap: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
+    border-radius: 8px; /* optional: rounded corners */
+    border: 1px solid rgb(239, 235, 235);
 }
 
 .card div h3 {
     margin-bottom: 5px;
+    font-size: 16px;
+    color: var(--headings-color);
+}
+
+.card div p {
+    font-size: 12px;
+
 }
 
 .card img {
-    width: 170px;
+    width: 150px;
     margin: 0 auto;
 }
 
@@ -191,9 +202,10 @@ footer p {
     padding: 5px;
 }
 
-/* Wide screen  CSS */
 
-@media screen and (min-width: 40em) {
+
+/* Wide screen  CSS @media screen and (min-width: 1024px)*/
+@media screen and (min-width: 768px) {
     .gchat {
         display: grid;
         grid-template-columns: 250px 1fr;
@@ -212,7 +224,7 @@ footer p {
     .overlay {
         position: absolute;
         top: 32%;
-        left: 8%;
+        left: 10%;
         color: white;
         border-left: 4px solid white;
         padding-left: 10px;
@@ -230,8 +242,16 @@ footer p {
         display: inline;
         align-content: center;
         margin: 0 auto;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
         border-radius: 8px; /* optional: rounded corners */
+    }
+
+    .description {
+    padding: 10px;
+}
+
+    .card img {
+        width: 100%;
     }
     
     
@@ -248,4 +268,28 @@ footer p {
 	#menu {
 		display: none;
 	}
+}
+
+/* Wide screen  CSS @media screen and (min-width: 768px)*/
+@media screen and (min-width: 1024px) {
+     .overlay {
+        position: absolute;
+        top: 21%;
+        left: 10%;
+        color: white;
+        border-left: 4px solid white;
+        padding-left: 10px;
+}
+}
+
+/* Wide screen  CSS @media screen and (min-width: 768px)*/
+@media screen and (min-width: 1440px) {
+     .overlay {
+        position: absolute;
+        top: 22%;
+        left: 22%;
+        color: white;
+        border-left: 4px solid white;
+        padding-left: 10px;
+}
 }
