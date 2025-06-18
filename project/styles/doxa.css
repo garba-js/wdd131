@@ -1,177 +1,241 @@
 :root {
-    --primary-color: #703b23;
+    --primary-color: #703b23; 
     --primary-color2: green;
-    --headings-color: #703c23;
-    --background-green: #bccf9e;
-    --background-brown: #c5a56f;
+    --headings-color: #703c23;        /* Dark brown */
+    --background-green: #bccf9e ;    /* For background and product highlight */
+    --background-brown: #c5a56f;    /* For background and product highlight */
     --accent2-color: #3e614b;
     --body-font: "Quicksand", sans-serif;
+   
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
-    max-width: 1080px;
     margin: 0 auto;
-    padding: 15px;
-    font-family: var(--body-font);
+    max-width: 1000px;
 }
 
-/* Header styles */
 header {
     background-color: var(--background-brown);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 12px #333333a8;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 12px #333333a8;
+    color: white;
 }
 
-/* Hamburger icon (only visible on mobile) */
-#hamburger {
-    font-size: 30px;
-    color: #111;
-    cursor: pointer;
-    z-index: 3;
+main {
+    max-width: 1000px;
 }
 
-/* Overlay nav menu (for mobile view) */
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.harmbuger {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.harmbuger li {
+	display: none;
+}
+.harmbuger a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: rgb(43, 35, 35);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.harmbuger a:hover,
+.harmbuger a:active {
+	color: var(--headings-color);
+	background-color: white;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-    z-index: 2;
-}
-
-/* Close button inside overlay (mobile only) */
-.overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 40px;
-    font-size: 50px;
-    color: #fff;
-    cursor: pointer;
+    top: 35%;
+    left: 20%;
+    color: white;
+    border-left: 4px solid white;
+    padding-left: 10px;
+    
 }
 
-/* Overlay links (mobile menu items) */
-.hamburger-links {
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-}
 
-.hamburger-links li {
-    margin: 20px 0;
-}
-
-.hamburger-links a {
-    font-size: 2rem;
-    color: #ccc;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.hamburger-links a:hover {
-    color: #fff;
-}
-
-/* Main content */
 main img {
     width: 100%;
 }
 
-/* Headings spanning grid */
 .hheading {
-    grid-column: 1 / span 3;
+    grid-column: 1 /span 3;
+    margin-bottom: 20px
 }
 
-/* Form styles */
+.highlight {
+    padding: 20px 50px;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+    padding: 0 10px;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-content: center;
+    align-items: center;
+}
+
+.card div h3 {
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 250px;
+}
+
+  .card:hover {
+    transform: scale(1.05);
+}
+
+/* Form CSS */
+
+.gchat {
+    padding: 0 20px;
+    margin: 1rem 0;
+    margin-bottom: 4rem;
+}
+
 .mform {
-    background-color: blue;
+    background-color: #eee;
     padding: 10px;
     font-size: 1rem;
 }
 
 .mform input[type="text"],
-.mform input[type="number"] {
+.mform input[type="number"]
+{
     display: block;
     width: 100%;
-    padding: 0.75rem;
+    padding: .75rem;
     margin-bottom: 10px;
+    
 }
 
-.mform input[type="submit"] {
+.mform h2 {
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+.mform input[type="submit"]{
+    margin: 0 auto;
     width: 100%;
-    padding: 0.75rem;
+    padding: .75rem;
     margin-top: 5px;
+    background-color: var(--accent2-color);
+    color: var(--background-green);
+    font-size: 1rem;
 }
 
-/* Footer styles */
 footer {
-    background-color: rgba(33, 33, 82, 0.718);
+    background-color: #eee;
     padding: 1rem;
     margin: 1rem 0;
+    grid-column: 1 / 4;
     text-align: center;
-    color: #fff;
+    color: var(--headings-color);
 }
 
 footer p {
-    margin: 0;
+    padding: 0;
+    margin: 10px 0;
 }
 
-/* Desktop / wide screen styles */
+.social img {
+    width: 2em;
+    padding: 5px;
+}
+
+/* Wide screen  CSS */
+
 @media screen and (min-width: 40em) {
-    header {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-    }
-
-    /* Turn off overlay styles, show normal horizontal nav */
-    .overlay {
-        all: unset;
-        display: grid;
-    }
-
-    .hamburger-links {
-        display: flex;
-    }
-
-    .hamburger-links li {
-        display: block; /* change state in small view */
-		flex: 1 1 100%;
-    }
-
-    .hamburger-links a {
-        color: #333;
-        font-size: 1.1rem;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    /* Hide hamburger icon & close button on desktop */
-    #hamburger,
-    .overlay .closebtn {
-        display: none;
-    }
-
     .gchat {
         display: grid;
-        grid-template-columns: 200px 1fr;
+        grid-template-columns: 250px 1fr;
         gap: 10px;
         align-items: center;
+        margin-bottom: 4rem;
     }
+
+    .highlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+
+    .hheading h2 {
+        margin-bottom: 10px;
+    }
+
+    .hheading {
+        margin-bottom: 2px;
+    }
+
+    .card {
+        display: inline;
+    }
+    .card img {
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+    
+    .harmbuger {
+		display: flex;
+	}
+	.harmbuger li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.harmbuger a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
 }
