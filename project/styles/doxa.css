@@ -100,13 +100,13 @@ main img {
 
 .hheading {
     grid-column: 1 /span 3;
-    margin-bottom: 20px
+    margin-bottom: 40px
 }
 
 .highlight {
     padding: 20px 50px;
     margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .card {
