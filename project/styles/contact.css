@@ -1,0 +1,253 @@
+:root {
+    --primary-color: #703b23; 
+    --primary-color2: green;
+    --headings-color: #703c23;        /* Dark brown */
+    --background-green: #bccf9e ;    /* For background and product highlight */
+    --background-brown: #c5a56f;    /* For background and product highlight */
+    --accent2-color: #3e614b;
+    --body-font: "Quicksand", sans-serif;
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+header {
+    background-color: var(--background-brown);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 12px #333333a8;
+    color: white;
+}
+
+#menu {
+	display: block;
+	font-size: 3rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.harmbuger {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.harmbuger li {
+	display: none;
+}
+.harmbuger a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: rgb(43, 35, 35);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.harmbuger a:hover,
+.harmbuger a:active {
+	color: var(--headings-color);
+	background-color: white;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+
+
+main img {
+    width: 100%;
+}
+
+
+/* About page____________________________________________________*/
+.us {
+    margin: 1rem 0;
+}
+
+.Cinfo {
+    padding: 0 1rem;
+    margin: 2rem 0;
+}
+
+.Cinfo img {
+    width: 35px;
+    margin: auto;
+}
+
+.section {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+/* Form */
+.cform {
+    margin-top: 10px;
+    background-color: #eee;
+    padding: 10px  1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.cform input[type="text"],
+.cform input[type="number"],
+.cform textarea[name="review"]
+{
+    display: block;
+    width: 100%;
+    padding: .75rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    
+}
+
+.cform h2 {
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+.cform input[type="submit"]{
+    margin: 0 auto;
+    width: 100%;
+    padding: .75rem;
+    margin-top: 5px;
+    background-color: var(--headings-color);
+    color: white;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 6px;
+}
+
+.cform textarea[name="review"]{
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+
+}
+
+.review {
+    margin: auto;
+    text-align: center;
+    max-width: 400px;
+    background-color: #eee;
+    padding: 2rem;
+}
+
+.tab {
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.map {
+    margin: 1rem 0;
+}
+
+.map iframe {
+    width: 270px;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    background-color: #eee;
+    padding: 1rem;
+    margin: 1rem 0;
+    grid-column: 1 / 4;
+    text-align: center;
+    color: var(--headings-color);
+}
+
+footer p {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.social {
+    margin: 0 auto;
+}
+
+.social img {
+    width: 2em;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 5px;
+    align-self: center;
+}
+
+/* Wide screen  CSS @media screen and (min-width: 600px)*/
+@media screen and (min-width: 600px) {
+     .overlay {
+        position: absolute;
+        top: 33%;
+        left: 8%;
+        color: white;
+        border-left: 4px solid white;
+        padding-left: 10px;
+}
+    .card img {
+        width: 100%;
+    }
+    /* contact us*/
+
+    .map iframe {
+        width: 500px;
+        margin-left: 1rem;
+    }
+
+    .cform {
+    margin-top: 10px;
+    background-color: #eee;
+    padding: 10px  4rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    }
+}
+
+/* Wide screen  CSS @media screen and (min-width: 1024px)*/
+@media screen and (min-width: 768px) {
+    
+    .harmbuger {
+		display: flex;
+	}
+	.harmbuger li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.harmbuger a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
+
+
