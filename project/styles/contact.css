@@ -19,6 +19,7 @@
 body {
     margin: 0 auto;
     max-width: 1000px;
+    font-family: var(--body-font);
 }
 
 header {
@@ -92,8 +93,9 @@ main img {
 }
 
 .Cinfo {
-    padding: 0 1rem;
+    padding: 0 .5rem;
     margin: 2rem 0;
+    font-size: 14px;
 }
 
 .Cinfo img {
@@ -184,6 +186,7 @@ footer {
     grid-column: 1 / 4;
     text-align: center;
     color: var(--headings-color);
+    border-top: 1px solid rgb(207, 202, 202);
 }
 
 footer p {

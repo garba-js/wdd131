@@ -19,6 +19,7 @@
 body {
     margin: 0 auto;
     max-width: 1000px;
+    font-family: var(--body-font);
 }
 
 header {
@@ -193,6 +194,7 @@ footer {
     grid-column: 1 / 4;
     text-align: center;
     color: var(--headings-color);
+    border-top: 1px solid rgb(207, 202, 202);
 }
 
 footer p {
@@ -322,90 +324,4 @@ footer p {
         border-left: 4px solid white;
         padding-left: 10px;
 }
-}
-
-
-/* About page____________________________________________________*/
-.us {
-    margin: 1rem 0;
-}
-
-.Cinfo {
-    padding: 0 1rem;
-    margin: 2rem 0;
-}
-
-.Cinfo img {
-    width: 35px;
-}
-
-.section {
-    padding: 0 1.5rem;
-    margin: 0 auto;
-}
-
-/* Form */
-.cform {
-    margin-top: 10px;
-    background-color: #eee;
-    padding: 10px  1rem;
-    font-size: 1rem;
-    border-radius: 8px;
-}
-
-.cform input[type="text"],
-.cform input[type="number"]
-{
-    display: block;
-    width: 100%;
-    padding: .75rem;
-    margin-bottom: 10px;
-    
-}
-
-.cform h2 {
-    padding: 5px 0;
-    margin-bottom: 5px;
-}
-
-.cform input[type="submit"]{
-    margin: 0 auto;
-    width: 100%;
-    padding: .75rem;
-    margin-top: 5px;
-    background-color: var(--headings-color);
-    color: white;
-    font-size: 1.5rem;
-    border: 0;
-}
-
-.cform textarea[name="review"]{
-    width: 100%;
-    height: 120px;
-    padding: 5px;
-
-}
-
-.review {
-    margin: auto;
-    text-align: center;
-    max-width: 400px;
-    background-color: #eee;
-    padding: 2rem;
-}
-
-.tab {
-    display: grid;
-    grid-template-columns: 50px auto;
-    align-items: center;
-    align-self: center;
-    margin-bottom: 10px;
-}
-
-.map {
-    margin: 1rem 0;
-}
-
-.map iframe {
-    width: 270px;
 }
