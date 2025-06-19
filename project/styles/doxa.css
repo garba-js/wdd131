@@ -205,7 +205,7 @@ footer p {
     padding: 5px;
 }
 
-/* Wide screen  CSS @media screen and (min-width: 768px)*/
+/* Wide screen  CSS @media screen and (min-width: 600px)*/
 @media screen and (min-width: 600px) {
      .overlay {
         position: absolute;
@@ -217,6 +217,20 @@ footer p {
 }
     .card img {
         width: 100%;
+    }
+    /* contact us*/
+
+    .map iframe {
+        width: 500px;
+        margin-left: 1rem;
+    }
+
+    .cform {
+    margin-top: 10px;
+    background-color: #eee;
+    padding: 10px  4rem;
+    font-size: 1rem;
+    border-radius: 8px;
     }
 }
 
@@ -298,7 +312,7 @@ footer p {
 }
 }
 
-/* Wide screen  CSS @media screen and (min-width: 768px)*/
+/* Wide screen  CSS @media screen and (min-width: 1140px)*/
 @media screen and (min-width: 1440px) {
      .overlay {
         position: absolute;
@@ -312,9 +326,13 @@ footer p {
 
 
 /* About page____________________________________________________*/
+.us {
+    margin: 1rem 0;
+}
+
 .Cinfo {
     padding: 0 1rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .Cinfo img {
@@ -330,7 +348,7 @@ footer p {
 .cform {
     margin-top: 10px;
     background-color: #eee;
-    padding: 10px;
+    padding: 10px  1rem;
     font-size: 1rem;
     border-radius: 8px;
 }
