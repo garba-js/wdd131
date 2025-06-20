@@ -13,6 +13,7 @@ menuButton.addEventListener('click', (e) => {
     navList.classList.toggle('open');
 });
 
+
 // ✅ Handle Form Submission & Save to localStorage
 const form = document.querySelector('.mform');
 
