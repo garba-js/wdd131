@@ -8,35 +8,41 @@ document.getElementById('lastModified').textContent = `Last Modified: ${document
 const menuButton = document.querySelector('#menu');
 const navList = document.querySelector('.harmbuger');
 
-menuButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    navList.classList.toggle('open');
-});
+if (menuButton && navList) {
+    menuButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        navList.classList.toggle('open');
+    });
+}
 
+// ✅ Handle Form Submission & Save to localStorage (both forms supported)
+const mForm = document.querySelector('.mform');
+const cForm = document.querySelector('.cform');
 
-// ✅ Handle Form Submission & Save to localStorage
-const form = document.querySelector('.mform');
+[mForm, cForm].forEach((form) => {
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+            const name = form.fname.value.trim();
+            const whatsapp = form.wnumber.value.trim();
 
-    const name = form.fname.value.trim();
-    const whatsapp = form.wnumber.value.trim();
+            if (name === '' || whatsapp === '') {
+                alert("Please fill in all fields.");
+                return;
+            }
 
-    if (name === '' || whatsapp === '') {
-        alert("Please fill in all fields.");
-        return;
+            localStorage.setItem('userName', name);
+            localStorage.setItem('whatsappNumber', whatsapp);
+
+            alert(`Thanks, ${name}! We'll keep you updated on WhatsApp.`);
+
+            form.reset();
+        });
     }
-
-    localStorage.setItem('userName', name);
-    localStorage.setItem('whatsappNumber', whatsapp);
-
-    alert(`Thanks, ${name}! We'll keep you updated on WhatsApp.`);
-
-    form.reset();
 });
 
-// ✅ Example: Display Products Using Template Literals (Optional for future dynamic display)
+// ✅ Example: Display Products Using Template Literals
 const products = [
     {
         name: "Cookies",
