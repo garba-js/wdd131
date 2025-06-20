@@ -80,16 +80,6 @@ header {
 	content: "X";
 }
 
-.overlay {
-    position: absolute;
-    top: 52%;
-    left: 8%;
-    color: white;
-    border-left: 4px solid white;
-    padding-left: 10px;
-    
-}
-
 
 main img {
     width: 100%;
@@ -209,14 +199,6 @@ footer p {
 
 /* Wide screen  CSS @media screen and (min-width: 600px)*/
 @media screen and (min-width: 600px) {
-     .overlay {
-        position: absolute;
-        top: 33%;
-        left: 8%;
-        color: white;
-        border-left: 4px solid white;
-        padding-left: 10px;
-}
     .card img {
         width: 100%;
     }
@@ -253,14 +235,6 @@ footer p {
         margin-top: 2rem;
     }
 
-    .overlay {
-        position: absolute;
-        top: 32%;
-        left: 10%;
-        color: white;
-        border-left: 4px solid white;
-        padding-left: 10px;
-}
 
     .hheading h2 {
         margin-bottom: 10px;
@@ -302,26 +276,4 @@ footer p {
 	}
 }
 
-/* Wide screen  CSS @media screen and (min-width: 768px)*/
-@media screen and (min-width: 1024px) {
-     .overlay {
-        position: absolute;
-        top: 21%;
-        left: 10%;
-        color: white;
-        border-left: 4px solid white;
-        padding-left: 10px;
-}
-}
 
-/* Wide screen  CSS @media screen and (min-width: 1140px)*/
-@media screen and (min-width: 1440px) {
-     .overlay {
-        position: absolute;
-        top: 22%;
-        left: 22%;
-        color: white;
-        border-left: 4px solid white;
-        padding-left: 10px;
-}
-}

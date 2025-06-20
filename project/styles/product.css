@@ -2,224 +2,189 @@
     --primary-color: #703b23; 
     --primary-color2: green;
     --headings-color: #703c23;        /* Dark brown */
-    --background-green: #bccf9e ;    /* For background and product highlight */
-    --background-brown: #c5a56f;    /* For background and product highlight */
+    --background-green: #bccf9e;      /* For background and product highlight */
+    --background-brown: #c5a56f;      /* For header background */
     --accent2-color: #3e614b;
     --body-font: "Quicksand", sans-serif;
-   
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     margin: 0 auto;
     max-width: 1000px;
     font-family: var(--body-font);
+    background-color: #fff;
+    color: #333;
 }
+
+/* -------------------- HEADER -------------------- */
 
 header {
     background-color: var(--background-brown);
     display: grid;
     grid-template-columns: 1fr 2fr;
-	grid-gap: 1rem;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 12px #333333a8;
-    color: white;
+    grid-gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 12px #333333a8;
+    color: #fff;
 }
 
 #menu {
-	display: block;
-	font-size: 3rem;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.5rem 0.75rem;
-	color: #000;
+    display: block;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #000;
 }
 
 #menu::before {
-	content: "≡";
+    content: "≡";
 }
 
 .harmbuger {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
 }
 
 .harmbuger li {
-	display: none;
+    display: none;
 }
+
 .harmbuger a {
-	display: block;
-	padding: 0.75rem;
-	text-align: center;
-	text-decoration: none;
-	color: rgb(43, 35, 35);
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(43, 35, 35);
+    font-weight: 700;
+    font-size: clamp(1rem, 2vmin, 1.2rem);
+    transition: 0.3s;
 }
 
 .harmbuger a:hover,
 .harmbuger a:active {
-	color: var(--headings-color);
-	background-color: white;
+    color: var(--headings-color);
+    background-color: #fff;
 }
 
 .show li {
-	display: block;
+    display: block;
 }
 
 #menu.show::before {
-	content: "X";
+    content: "X";
 }
 
-
+/* -------------------- MAIN -------------------- */
 
 main img {
     width: 100%;
+    height: auto;
 }
 
 .hheading {
-    grid-column: 1 /span 3;
-    margin-bottom: 20px
+    grid-column: 1 / span 3;
+    margin-bottom: 20px;
 }
 
 .highlight {
-    padding: 20px;
+    padding: 1rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
 }
 
 .highlight p {
-    font-size: 13px;
+    font-size: 0.85rem;
 }
 
 .highlight h3 {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
+
+/* -------------------- PRODUCT CARD -------------------- */
 
 .card {
-    padding: 5px 10px;
-    transition: transform 0.3s ease;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-content: center;
-    align-items: center;
-    gap: 12px;
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
-    border-radius: 8px; /* optional: rounded corners */
-    border: 1px solid rgb(239, 235, 235);
+    gap: 0.75rem;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
 }
 
-.card div h3 {
-    margin-bottom: 5px;
-    color: var(--headings-color);
-}
-
-.card div p {
-    font-size: 12px;
+.card:hover {
+    transform: scale(1.03);
 }
 
 .card img {
     width: 100%;
-    margin: 0 auto;
+    border-radius: 4px;
 }
 
-  .card:hover {
-    transform: scale(1.05);
+.description h3 {
+    color: var(--headings-color);
+    margin-bottom: 0.3rem;
 }
 
-/* Form CSS */
+.description p {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
 
-
+/* -------------------- FOOTER -------------------- */
 
 footer {
     background-color: #eee;
     padding: 1rem;
-    margin: 1rem 0;
-    grid-column: 1 / 4;
     text-align: center;
     color: var(--headings-color);
-    border-top: 1px solid rgb(207, 202, 202);
+    border-top: 1px solid #ccc;
 }
 
 footer p {
-    padding: 0;
-    margin: 10px 0;
+    margin: 0.5rem 0;
 }
 
 .social img {
-    width: 2em;
-    padding: 5px;
+    width: 2rem;
+    padding: 0.25rem;
 }
 
-/* Wide screen  CSS @media screen and (min-width: 600px)*/
+/* -------------------- MEDIA QUERIES -------------------- */
+
 @media screen and (min-width: 600px) {
-    .card img {
-        width: 100%;
-    }
-    /* contact us*/
-
-}
-
-/* Wide screen  CSS @media screen and (min-width: 1024px)*/
-@media screen and (min-width: 768px) {
-
-
     .highlight {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .highlight {
+        grid-template-columns: 1fr 1fr 1fr;
         margin-top: 2rem;
     }
 
-    .hheading h2 {
-        margin-bottom: 10px;
-    }
-
-    .hheading {
-        margin-bottom: 2px;
-    }
-
-    .card {
-        display: inline;
-        align-content: center;
-        margin: 0 auto;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
-        border-radius: 8px; /* optional: rounded corners */
-    }
-
-    .description {
-    padding: 10px;
-}
-
-    .card img {
-        width: 100%;
-    }
-    
-    
     .harmbuger {
-		display: flex;
-	}
-	.harmbuger li {
-		display: block; /* change state in small view */
-		flex: 1 1 100%;
-	}
-	.harmbuger a {
-		text-align: center;
-	}
-	#menu {
-		display: none;
-	}
+        display: flex;
+    }
+
+    .harmbuger li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
 }
-
-
