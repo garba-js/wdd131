@@ -1,40 +1,150 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Setup */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
+/* Header & Navigation */
 header {
-    background-color: bisque;
-    color: blueviolet;
+    background-color: #1b4d79;
+    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1rem 0;
 }
 
 #course-title {
     display: block;
     font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    padding: 0 10px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    background-color: #123452;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    font-weight: 400;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #245d8c;
+}
+
+/* Main Layout */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: #1b4d79;
+    padding-bottom: 0.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cards styling */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1.5rem;
+    border-top: 5px solid #1b4d79;
+}
+
+.card h2 {
+    background-color: #1b4d79;
+    color: white;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding-top: 1.5rem;
+}
+
+.about-content, .location-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.location-content {
+    padding-right: 2rem;
+}
+
+.about-content img{
+    border-radius: 4px;
+    height: auto;
+}
+
+.box {
+    margin: 0;
+}
+
+.box p {
+    font-size: 12px;
+    margin: 0;
+}
+
+
+
+ul {
+    list-style-type: square;
+    padding-left: 1.2rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+ul li a {
+    color: #1b4d79;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1b4d79;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
 }

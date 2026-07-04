@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Garba Joseph Samson</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals landing page for Garba Joseph Samson.">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals home page for Garba Joseph Samson. A landing page demonstrating HTML, CSS Grid, Flexbox, and JavaScript basics.">
     <meta name="author" content="Garba Joseph Samson">
-
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-
+    <link href="https://googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
-
 <body>
     <header>
         <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
-            <a href="#">LinkedIn</a>
-            <a href="#">Canvas</a>
-            <a href="#">Scripture</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://instructure.com" target="_blank">I-Learn</a>
+            <a href="https://churchofjesuschrist.org" target="_blank">Scripture</a>
             <a href="#">Final Project</a>
-
         </nav>
     </header>
+
     <main>
         <h1>Garba Joseph Samson</h1>
-        <section class="card">
-            <h2>About me</h2>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sapiente obcaecati impedit cumque
-                a, quas iusto! Reiciendis dicta, dolorum suscipit expedita veniam, praesentium eaque excepturi, in
-                numquam fuga quidem omnis!</p>
-        </section>
+        <div class="grid-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>My name is Garba Joseph Samson, and I am a graphic designer, entrepreneur, and software development student from Jos, Plateau State, Nigeria. I am passionate about creating impactful designs, building digital solutions, and helping businesses grow through branding and technology.</p>
+                    <img src="images/me.jpg" alt="Profile picture of [Your Name]" width="150">
+                </div>
+                <h3>Jos Plateau, Nigeria</h3>
+                <div class="location-content">
+                    <div class="box">
+                        <img src="images/nigeria_flag.png" alt="Official Flag" width="100">
+                    <p class="caption">Official Nigerian Flag</p>
+                    </div>
+                    
+                    <p>Add a brief paragraph about your location here. Share interesting facts, geography details, or unique characteristics about your state or country.</p>
+                </div>
+            </section>
 
-        <section class="card">
-            <h2>Plateau, Nigeria</h2>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa velit voluptatum, aut quod quis,
-                architecto exercitationem facere ullam, iusto tempore alias nulla magnam dolorem voluptate recusandae
-                nostrum! Quis, magni praesentium.</p>
-        </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://w3schools.com" target="_blank">W3Schools</a></li>
+                    <li><a href="https://udemy.com" target="_blank">Udemy</a></li>
+                    <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>
-            &copy;<span id="currentyear"></span> | Garba Joseph Samson | Plateau, Nigeria
-        </p>
+        <p>&copy;<span id="currentyear"></span> | Garba Joseph Samson | Plateau, Nigeria</p>
         <p id="lastModified"></p>
     </footer>
-
 </body>
-
 </html>
