@@ -12,26 +12,25 @@ header {
     background-color: #1b4d79;
     color: white;
     text-align: center;
-    padding: 1rem 0;
 }
 
 #course-title {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    padding: 1.5rem;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #123452;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.6rem;
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -42,8 +41,8 @@ nav a:hover {
 
 /* Main Layout */
 main {
-    max-width: 1000px;
-    margin: 2rem auto;
+    max-width: 1200px;
+    margin: 1rem auto;
     padding: 0 1rem;
 }
 
@@ -86,9 +85,13 @@ h1 {
 
 h3 {
     text-align: center;
-    border-bottom: 1px solid gray;
-    margin: 0;
     padding-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+hr {
+    max-width: 250px;
+    margin-top: 5px;
 }
 
 .about-content, .location-content {
@@ -97,9 +100,6 @@ h3 {
     align-items: center;
 }
 
-.location-content {
-    padding-right: 2rem;
-}
 
 .about-content img{
     border-radius: 4px;
@@ -107,7 +107,7 @@ h3 {
 }
 
 .box {
-    margin: 0;
+    margin: 10px;
 }
 
 .box p {
