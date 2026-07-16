@@ -1,6 +1,7 @@
 /* Core Styling Configurations */
 :root {
     --primary-color: #1a365d;
+    --background-color: #11223f;
     --accent-color: #cca43b;
     --text-color: #2b2d42;
     --bg-light: #f4f5f7;
@@ -61,7 +62,7 @@ header h1 {
 nav {
     display: none; 
     flex-direction: column;
-    background-color: #11223f;
+    background-color: var(--background-color);
 }
 
 nav.show {
@@ -76,7 +77,6 @@ nav a {
     text-align: center;
     font-weight: 500;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav a:hover, nav a.active {
