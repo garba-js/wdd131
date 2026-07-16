@@ -1,0 +1,42 @@
+@media (min-width:768px){
+
+/* Desktop Enhancements & Layout Shifts */
+
+#menuButton {
+    display: none; /* Hide menu toggler on big view screens */
+}
+
+.header-container {
+    padding: 1.5rem 2rem;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex !important; /* Force links display row configuration container horizontal alignment */
+    flex-direction: row;
+    justify-content: center;
+    background-color: #11223f;
+}
+
+nav a {
+    padding: 1rem 2rem;
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav a:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Multi-Column View Dynamic Responsive Matrix Grid */
+.gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+
+ }
