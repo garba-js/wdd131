@@ -14,8 +14,9 @@ header h1 {
 }
 
 nav {
-    display: flex !important; 
+    display: flex ; 
     justify-content: center;
+    flex-direction: row;
     background-color: #11223f;
 }
 
