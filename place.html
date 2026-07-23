@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madagascar | Dynamic Country Page</title>
+    <meta name="description" content="WDD 131 project webpage presenting geographic details and an automated metrics tool for Madagascar.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+
+    <main>
+        <!-- Hero section wraps the responsive webp image background element -->
+        <div class="hero-container">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Lemurs in Madagascar resting on wooden beam" width="1000" height="650" loading="lazy">
+            </picture>
+        </div>
+
+        <section class="data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 587,041 sq km</li>
+                <li><strong>Population:</strong> 27,691,018</li>
+                <li><strong>Capital:</strong> Antananarivo</li>
+                <li><strong>Languages:</strong> Malagasy, French</li>
+                <li><strong>Currency:</strong> Malagasy Ariary</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +261</li>
+                <li><strong>Internet TLD:</strong> .mg</li>
+            </ul>
+        </section>
+
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <!-- Displays in mobile mode, handled via CSS variable hidden states on desktop queries -->
+            <img class="weather-icon-mobile" src="images/weather.svg" alt="Partial sun weather layout icon" width="45" height="45">
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temperature">10</span> °C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="windspeed">5</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Your Name | Madagascar</p>
+        <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
