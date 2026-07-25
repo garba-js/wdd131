@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+
+    #menuButton {
+        display: none; 
+    }
+
+    .header-container {
+        padding: 1.5rem 2rem;
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        display: flex; 
+        justify-content: center;
+        flex-direction: row;
+        background-color: #11223f;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+        border-top: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    nav a:last-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Grid Layout Updates */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    /* Desktop adjustments to keep data text aligned nicely next to the media elements */
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    figure img {
+        margin-top: auto; /* Pushes images evenly to the bottom edge of cards */
+    }
+}
