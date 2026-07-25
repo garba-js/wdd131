@@ -1,7 +1,7 @@
 /* Color and Layout Configuration Variables */
 :root {
-    --primary-green: #007A33;    /* Official Madagascar Green */
-    --accent-red: #C8102E;       /* Official Madagascar Red */
+    --primary-green: #007A33;    
+    --accent-red: #C8102E;       
     --bg-surface: rgba(255, 255, 255, 0.95);
     --text-dark: #121212;
     --text-light: #FFFFFF;
@@ -9,7 +9,6 @@
     --gap-spacing: 1rem;
 }
 
-/* Fundamental Global Core Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -37,7 +36,6 @@ header h1 {
     font-weight: bold;
 }
 
-/* Mobile Layout: Linear stack order stream */
 main {
     flex: 1;
     display: flex;
@@ -109,7 +107,6 @@ footer {
     font-weight: 300;
 }
 
-/* Wide View Override: Transforms main container into an absolute layering canvas grid */
 @media (min-width: 800px) {
     main {
         position: relative;
@@ -128,7 +125,6 @@ footer {
         border-radius: 0;
     }
 
-    /* Floats the Data Card overlay exactly over the left-hand section of the wireframe */
     .data-card {
         position: absolute;
         top: 2.5rem;
@@ -138,7 +134,6 @@ footer {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
-    /* Floats the Weather Card overlay exactly over the right-hand section of the wireframe */
     .weather-card {
         position: absolute;
         bottom: 2.5rem;
@@ -148,12 +143,10 @@ footer {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
-    /* Criterion 5: Suppress mobile standalone img icon on wide devices */
     .weather-icon-mobile {
         display: none;
     }
 
-    /* Criterion 6: Appends pseudo-element weather symbol after heading node on wider viewports */
     .weather-card h2::after {
         content: " ⛅";
         float: right;
