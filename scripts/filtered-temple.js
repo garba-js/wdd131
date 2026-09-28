@@ -20,7 +20,7 @@ const temples = [
     location: "Aba, Nigeria",
     dedicated: "2005, August, 7",
     area: 11500,
-    imageUrl: "https://churchofjesuschrist.org"
+    imageUrl: "https://churchofjesuschristtemples.org/aba-nigeria-temple/photographs/"
   },
   {
     templeName: "Manti Utah",
