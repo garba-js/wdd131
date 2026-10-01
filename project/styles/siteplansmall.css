@@ -1,0 +1,147 @@
+
+    /* Color Schema Variables */
+    :root {
+      --primary-color: #1E3A2B;    /* Deep Forest Green - Brand Header, Main Headings */
+      --secondary-color: #2E7D32;  /* Vibrant Leaf Green - Accent Headings, Borders */
+      --accent-color: #10B981;     /* Mint/Emerald Green - Action Buttons, Callouts */
+      --highlight-color: #EAB308;  /* Golden Harvest - Badges, Special Alerts */
+      --light-bg: #F4F7F5;         /* Crisp Agricultural Tint - Section Containers */
+      --dark-text: #1F2937;        /* Off-Black - Primary Body Text */
+      --white: #FFFFFF;
+      
+      --heading-font: 'Montserrat', sans-serif;
+      --body-font: 'Open Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--body-font);
+      color: var(--dark-text);
+      line-height: 1.6;
+      background-color: var(--white);
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--white);
+      padding: 2.5rem 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      text-align: center;
+      border-bottom: 4px solid var(--highlight-color);
+    }
+
+    header h1 {
+      font-family: var(--heading-font);
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #A7F3D0;
+      font-weight: 500;
+    }
+
+    section {
+      background-color: var(--light-bg);
+      border-left: 5px solid var(--secondary-color);
+      padding: 1.75rem 2rem;
+      margin-bottom: 2rem;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-family: var(--heading-font);
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #E5E7EB;
+      padding-bottom: 0.4rem;
+    }
+
+    h3 {
+      font-family: var(--heading-font);
+      color: var(--secondary-color);
+      margin: 1.2rem 0 0.5rem 0;
+      font-size: 1.15rem;
+    }
+
+    p, ul {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Color Swatches Grid */
+    .color-palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .swatch {
+      padding: 1.25rem 1rem;
+      border-radius: 8px;
+      color: var(--white);
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      font-size: 0.95rem;
+    }
+
+    .swatch.primary { background-color: var(--primary-color); }
+    .swatch.secondary { background-color: var(--secondary-color); }
+    .swatch.accent { background-color: var(--accent-color); color: var(--dark-text); }
+    .swatch.highlight { background-color: var(--highlight-color); color: var(--dark-text); }
+    .swatch.light { background-color: var(--light-bg); color: var(--dark-text); border: 1px solid #D1D5DB; }
+
+    /* Wireframes Layout Grid */
+    .wireframes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .wireframe-card {
+      background-color: var(--white);
+      padding: 1.25rem;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .wireframe-card img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #D1D5DB;
+      border-radius: 4px;
+      margin-top: 0.75rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      color: #6B7280;
+      font-size: 0.9rem;
+      border-top: 1px solid #E5E7EB;
+    }
