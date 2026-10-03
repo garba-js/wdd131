@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #003366;
+    --accent-color: #d97706;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --border-color: #cbd5e1;
+    --success-color: #16a34a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px 8px 0 0;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    background-color: var(--card-bg);
+    padding: 2.5rem 2rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Success Checkmark Icon */
+.success-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #dcfce7;
+    color: var(--success-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    margin: 0 auto 1.25rem auto;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 1.05rem;
+    color: #475569;
+    margin-bottom: 1rem;
+}
+
+/* Review Counter Display Card */
+.counter-box {
+    background-color: #f1f5f9;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0 2rem 0;
+    display: inline-block;
+}
+
+.counter-box span {
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    font-weight: bold;
+}
+
+#review-counter {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Action Button */
+.btn-return {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.85rem 1.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-return:hover {
+    background-color: #002244;
+}
+
+.btn-return:active {
+    transform: scale(0.98);
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}

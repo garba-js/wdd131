@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #003366;
+    --accent-color: #d97706;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --border-color: #cbd5e1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px 8px 0 0;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-item {
+    margin-bottom: 1.5rem;
+}
+
+label, legend {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.required {
+    color: #dc2626;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+/* Star Rating CSS */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.25rem;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2rem;
+    color: #cbd5e1;
+    cursor: pointer;
+    margin-bottom: 0;
+    transition: color 0.2s ease;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: var(--accent-color);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #002244;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
