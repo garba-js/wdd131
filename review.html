@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Submission confirmation for Product Review.">
+    <meta name="description" content="Submission confirmation page for Product Review.">
+    <meta name="author" content="Garba Joseph Samson">
     <title>Review Confirmation | WDD 131</title>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/review.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Thank You!</h1>
+        <h1>Submission Received</h1>
     </header>
 
-    <main style="text-align: center;">
-        <h2>Your review has been successfully submitted.</h2>
-        <p style="margin: 1.5rem 0; font-size: 1.2rem;">
-            Total Reviews Completed: <strong id="review-counter">0</strong>
-        </p>
-        <a href="form.html" class="submit-btn" style="display: inline-block; text-decoration: none; max-width: 200px;">Submit Another</a>
+    <main class="review-container">
+        <div class="success-icon">&#10003;</div>
+        <h2>Thank You for Your Feedback!</h2>
+        <p>Your product review has been submitted successfully.</p>
+
+        <div class="counter-box">
+            <span>Total Reviews Submitted</span>
+            <div id="review-counter">0</div>
+        </div>
+
+        <div>
+            <a href="form.html" class="submit-btn" style="max-width: 250px;">Leave Another Review</a>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span>  | Garba Joseph Samson | Plateau, Nigeria</p>
+        <p>&copy; <span id="currentyear"></span> | Garba Joseph Samson | Plateau, Nigeria</p>
         <p id="lastModified"></p>
     </footer>
 </body>
