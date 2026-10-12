@@ -6,7 +6,7 @@ const produceItems = [
     category: "vegetables",
     price: 4.50,
     inStock: true,
-    image: "images/bell_pepper.jpg",
+    image: "images/bell_pepper.webp",
     description: "Crisp, colorful bell peppers grown using zero synthetic pesticides."
   },
   {
@@ -15,7 +15,7 @@ const produceItems = [
     category: "vegetables",
     price: 3.80,
     inStock: true,
-    image: "images/lettuce.jpg",
+    image: "images/lettuce.webp",
     description: "Nutrient-rich, water-farmed fresh lettuce heads harvest-ready daily."
   },
   {
@@ -24,7 +24,7 @@ const produceItems = [
     category: "vegetables",
     price: 2.90,
     inStock: false,
-    image: "images/tomatoes.jpg",
+    image: "images/tomatoes.webp",
     description: "Vine-ripened organic tomatoes rich in natural antioxidants."
   },
   {
@@ -33,7 +33,7 @@ const produceItems = [
     category: "agri-tech",
     price: 120.00,
     inStock: true,
-    image: "images/irrigation.jpg",
+    image: "images/irrigation.webp",
     description: "Water-efficient micro-drip kit tailored for smallholder green farms."
   },
   {
@@ -42,7 +42,7 @@ const produceItems = [
     category: "fruits",
     price: 6.20,
     inStock: true,
-    image: "images/strawberries.jpg",
+    image: "images/strawberries.webp",
     description: "Sweet, juicy greenhouse strawberries picked at peak ripeness."
   },
   {
@@ -51,7 +51,7 @@ const produceItems = [
     category: "agri-tech",
     price: 45.00,
     inStock: true,
-    image: "images/sensor.jpg",
+    image: "images/sensor.webp",
     description: "Real-time wireless soil telemetry device for optimal water management."
   }
 ];
