@@ -6,7 +6,7 @@ const produceItems = [
     category: "vegetables",
     price: 4.50,
     inStock: true,
-    image: "images/peppers.jpg",
+    image: "images/bell_pepper.jpg",
     description: "Crisp, colorful bell peppers grown using zero synthetic pesticides."
   },
   {
