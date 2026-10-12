@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE POD Green Farm | Produce Catalog &amp; Agri-Tech</title>
+  <meta name="description" content="Browse organic crop packages, fresh farm produce, and modern agricultural solutions at THE POD Green Farm.">
+  <meta name="author" content="Garba Joseph Samson">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- JavaScript Modules -->
+  <script src="scripts/produceData.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/catalog.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <h1>THE POD Green Farm</h1>
+      <p class="tagline">Produce Directory &amp; Tech Solutions</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html" class="active">Produce &amp; Tech</a></li>
+        <li><a href="contact.html">Order Request</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="catalog-header">
+      <h2>Interactive Farm Directory &amp; Solutions</h2>
+      <p>Filter through our available harvests, organic bundles, and agricultural services below.</p>
+      
+      <!-- Filter Controls -->
+      <div class="filter-controls">
+        <div class="filter-group">
+          <label for="category-filter">Category:</label>
+          <select id="category-filter">
+            <option value="all">All Items</option>
+            <option value="vegetables">Fresh Vegetables</option>
+            <option value="fruits">Organic Fruits</option>
+            <option value="agri-tech">Agri-Tech Services</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="availability-filter">Availability:</label>
+          <select id="availability-filter">
+            <option value="all">Show All</option>
+            <option value="in-stock">Available Now</option>
+          </select>
+        </div>
+
+        <div class="saved-counter-display">
+          <p>Saved Favorites: <strong id="saved-count">0</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic Catalog Grid -->
+    <section class="catalog-section">
+      <div id="catalog-grid" class="cards-grid">
+        <!-- Dynamically generated via catalog.js using template literals -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> THE POD Green Farm | Garba Joseph Samson</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="references.html">References &amp; Citations</a></p>
+  </footer>
+
+</body>
+</html>

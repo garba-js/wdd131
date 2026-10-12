@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE POD Green Farm | Order Request &amp; Inquiry</title>
+  <meta name="description" content="Submit custom produce orders, wholesale requests, farm visit bookings, or agri-tech consultations at THE POD Green Farm.">
+  <meta name="author" content="Garba Joseph Samson">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- JavaScript Modules -->
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <h1>THE POD Green Farm</h1>
+      <p class="tagline">Custom Orders &amp; Inquiries</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Produce &amp; Tech</a></li>
+        <li><a href="contact.html" class="active">Order Request</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Order Request &amp; Farm Inquiry Form</h2>
+      <p>Please complete the form below to submit custom organic box requests, bulk wholesale inquiries, or to book a farm tour consultation.</p>
+
+      <form id="inquiry-form" method="get" action="#">
+        <fieldset>
+          <legend>Personal &amp; Contact Information</legend>
+
+          <label for="full-name">Full Name *</label>
+          <input type="text" id="full-name" name="fullName" required placeholder="e.g. Garba Samson">
+
+          <label for="email-address">Email Address *</label>
+          <input type="email" id="email-address" name="email" required placeholder="name@example.com">
+
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone" placeholder="e.g. +234 800 000 0000">
+        </fieldset>
+
+        <fieldset>
+          <legend>Inquiry Details &amp; Specifications</legend>
+
+          <label for="inquiry-type">Inquiry Type *</label>
+          <select id="inquiry-type" name="inquiryType" required>
+            <option value="" disabled selected>Select an option...</option>
+            <option value="wholesale">Wholesale Produce Request</option>
+            <option value="custom-box">Custom Organic Box Order</option>
+            <option value="farm-tour">Farm Visit &amp; Tour Booking</option>
+            <option value="tech-consultation">Agri-Tech Installation Consultation</option>
+          </select>
+
+          <label for="details">Additional Notes / Specifications *</label>
+          <textarea id="details" name="details" rows="5" required placeholder="Specify crop types, quantities, delivery dates, or consultation topics..."></textarea>
+        </fieldset>
+
+        <button type="submit" class="submit-button">Submit Request</button>
+      </form>
+
+      <!-- Dynamic Submission Feedback Area -->
+      <div id="form-feedback" class="feedback-container hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> THE POD Green Farm | Garba Joseph Samson</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="references.html">References &amp; Citations</a></p>
+  </footer>
+
+</body>
+</html>
